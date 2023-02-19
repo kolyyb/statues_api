@@ -11,7 +11,6 @@ class UserViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
 
-
 class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
@@ -22,6 +21,7 @@ class StatuesViewSet(viewsets.ModelViewSet):
     queryset = Statues.objects.all().order_by('-rank')
     serializer_class = StatuesSerializer
     permission_classes = [permissions.IsAuthenticated]
+    filterset_fields = ['name', 'size', 'country', 'rank']
 
 
 
