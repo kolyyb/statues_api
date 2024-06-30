@@ -29,6 +29,6 @@ Classement mondial
 Classement continental     
 Classement par pays (nombre de statues dans le même pays)     
      
-EVOLUTIONS     
+TODO :    
         
-isVisitable ?     
+is_visitable ?     
